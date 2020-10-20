@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/filter"
+        android:icon="@drawable/ic_filter"
+        android:orderInCategory="100"
+        android:title="@string/filter"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/addCategory"
+        android:icon="@drawable/ic_add"
+        android:orderInCategory="100"
+        android:title="@string/add_category"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/listCategories"
+        android:icon="@drawable/ic_add"
+        android:orderInCategory="100"
+        android:title="@string/list_categories"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/addCourse"
+        android:icon="@drawable/ic_add"
+        android:orderInCategory="100"
+        android:title="@string/add_course"
+        app:showAsAction="ifRoom" />
+
+
+</menu>

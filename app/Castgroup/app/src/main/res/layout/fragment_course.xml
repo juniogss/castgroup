@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none"
+    tools:context=".main.presenter.course.CourseFragment">
+
+    <LinearLayout
+        style="@style/FormContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lyDesc"
+            style="@style/InputTextLayout"
+            android:layout_marginTop="8dp"
+            android:hint="@string/desc">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDesc"
+                style="@style/InputEditText"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lyDateStart"
+            style="@style/InputTextLayout"
+            android:layout_marginTop="8dp"
+            android:hint="@string/date_start">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDateStart"
+                style="@style/InputEditText"
+                android:inputType="date"
+                android:maxLength="10"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lyDateEnd"
+            style="@style/InputTextLayout"
+            android:layout_marginTop="8dp"
+            android:hint="@string/date_end">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDateEnd"
+                style="@style/InputEditText"
+                android:inputType="date"
+                android:maxLength="10"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lyStudents"
+            style="@style/InputTextLayout"
+            android:layout_marginTop="8dp"
+            android:hint="@string/students">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etStudents"
+                style="@style/InputEditText"
+                android:inputType="number"
+                android:maxLength="15" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lyCategory"
+            style="@style/ExposedDropdownMenu"
+            android:layout_marginTop="8dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/acCategory"
+                style="@style/AutoCompleteTextView"
+                android:hint="@string/category" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <br.com.junio.castgroup.common.component.LoadingButton
+            android:id="@+id/btAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:text="@string/add" />
+    </LinearLayout>
+</ScrollView>

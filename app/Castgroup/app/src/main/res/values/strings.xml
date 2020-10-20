@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Cast group</string>
+    <string name="fragment">course_fragment</string>
+
+    <!--LIST-->
+    <string name="empty_courses">Nenhum curso cadastrado</string>
+    <string name="courses">Cursos</string>
+    <string name="filter">Filtrar</string>
+
+    <!--COURSE-->
+    <string name="desc">Descrição</string>
+    <string name="date_start">Data de início</string>
+    <string name="date_end">Data de término</string>
+    <string name="category">Categoria</string>
+    <string name="students">Alunos por turma</string>
+    <string name="add">Adicionar</string>
+    <string name="add_course">Adicionar Curso</string>
+    <string name="edit">Alterar</string>
+    <string name="invalid_date">Data inválida</string>
+
+    <!--FILTER-->
+    <string name="confirm">Confirmar</string>
+    <string name="clear_filters">Limpar filtros</string>
+    <string name="sort">Ordenar</string>
+    <string name="year_reference">Ano</string>
+    <string name="month_reference">Mês</string>
+    <string name="day_reference">Dia</string>
+    <string name="date_check">Qualquer data</string>
+    <string name="name">Descrição</string>
+
+    <!--CATEGORY-->
+    <string name="code">Código</string>
+    <string name="invalid_code">Código inválido</string>
+    <string name="add_category">Adicionar categoria</string>
+    <string name="list_categories">Listar categorias</string>
+</resources>

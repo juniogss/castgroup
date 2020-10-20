@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none"
+    tools:context=".main.presenter.filter.CourseFilterDialog">
+
+    <LinearLayout
+        style="@style/FormContainer"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="24dp">
+
+        <TextView
+            style="@style/Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:text="@string/filter"
+            android:textSize="25sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lyName"
+            style="@style/InputTextLayout"
+            android:layout_marginTop="5dp"
+            android:hint="@string/name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etName"
+                style="@style/InputEditText"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/dateCheck"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/date_check" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lyDay"
+                style="@style/ExposedDropdownMenu"
+                android:layout_width="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.25">
+
+                <AutoCompleteTextView
+                    android:id="@+id/acDay"
+                    style="@style/AutoCompleteTextView"
+                    android:hint="@string/day_reference" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lyMonth"
+                style="@style/ExposedDropdownMenu"
+                android:layout_width="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.4">
+
+                <AutoCompleteTextView
+                    android:id="@+id/acMonth"
+                    style="@style/AutoCompleteTextView"
+                    android:hint="@string/month_reference" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lyYear"
+            style="@style/ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/acYear"
+                style="@style/AutoCompleteTextView"
+                android:hint="@string/year_reference" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lySort"
+            style="@style/ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/acSort"
+                style="@style/AutoCompleteTextView"
+                android:hint="@string/sort" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btClean"
+            style="@style/Button"
+            android:backgroundTint="@color/gray"
+            android:text="@string/clear_filters" />
+
+        <br.com.junio.castgroup.common.component.LoadingButton
+            android:id="@+id/btConfirm"
+            style="@style/Button"
+            android:layout_height="wrap_content"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:text="@string/confirm"
+            app:text="@string/filter" />
+    </LinearLayout>
+</ScrollView>
