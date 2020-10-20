@@ -11,7 +11,7 @@ Também possui a opção filtrar, onde é possível buscar cursos pela descriç�
 
 # Especificações técnicas
 - Retrofit pras requisições HTTP
-- SQLite para armazenamento de cursos e categorias.
+- SQLite para armazenamento local no app e MongoDB para armazenamento no servidor.
 - Arquitetura MVP.
 - Componentes UI com Material Design e construção de componentes estilizados.
 - Stetho para ponte de depuração
