@@ -1,0 +1,25 @@
+[{
+  "_id": {
+    "$oid": "5f8deba3cdf486efbb5a9cd5"
+  },
+  "code": 1,
+  "desc": "Comportamental"
+},{
+  "_id": {
+    "$oid": "5f8debf6cdf486efbb5a9cd6"
+  },
+  "code": 2,
+  "desc": "Programação"
+},{
+  "_id": {
+    "$oid": "5f8dec28cdf486efbb5a9cd8"
+  },
+  "code": 4,
+  "desc": "Processos"
+},{
+  "_id": {
+    "$oid": "5f8e48f7cdf486efbb5a9cdc"
+  },
+  "code": 3,
+  "desc": "Qualidade"
+}]

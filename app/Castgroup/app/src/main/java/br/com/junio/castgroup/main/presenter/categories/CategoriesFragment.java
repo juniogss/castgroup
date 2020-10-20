@@ -22,7 +22,6 @@ import br.com.junio.castgroup.common.adapter.CategoryItem;
 import br.com.junio.castgroup.common.view.AbstractFragment;
 import br.com.junio.castgroup.databinding.FragmentCategoriesBinding;
 import br.com.junio.castgroup.main.presenter.ListView;
-import br.com.junio.castgroup.main.presenter.category.CategoriesPresenter;
 
 public class CategoriesFragment extends AbstractFragment<CategoriesPresenter> implements ListView.CategoriesInterface {
 

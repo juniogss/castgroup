@@ -50,7 +50,7 @@ public class CourseFilterDialog extends DialogFragment {
 
     Integer[] DAYS = new Integer[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
             16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31};
-    Integer[] YEARS = new Integer[]{2019, 2020};
+    Integer[] YEARS = new Integer[]{2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027};
     String[] SORT = new String[]{"Mais recente", "Mais antigo", "Nomes de A-Z", "Nomes de Z-A"};
     List<Month> months = new ArrayList<>();
 
@@ -139,15 +139,8 @@ public class CourseFilterDialog extends DialogFragment {
     public void onResume() {
         super.onResume();
 
-//        Month month = months.get(DateUtil.getCalendar().get(Calendar.MONTH));
-//        this.month = month.getValue();
-//        day = DateUtil.getCalendar().get(Calendar.DAY_OF_MONTH);
-//        year = String.valueOf(DateUtil.getCalendar().get(Calendar.YEAR));
         sort = 0;
 
-//        acDay.setText(String.valueOf(day));
-//        acMonth.setText(month.getLabel());
-//        acYear.setText(year);
         acSort.setText(SORT[0]);
 
         acDay.setAdapter(getAdapterOf(DAYS));

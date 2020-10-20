@@ -1,5 +1,9 @@
 package br.com.junio.castgroup.main.presenter.categories;
 
+import android.content.Context;
+
+import androidx.appcompat.app.AlertDialog;
+
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
@@ -58,7 +62,12 @@ public class CategoriesPresenter implements Presenter<Category>, CategoryListene
 
     @Override
     public void onDeleteClick(Category category) {
-        remoteDataSource.deleteCategory(category, new RemoteDeleteCallback());
+        new AlertDialog.Builder((Context) view)
+                .setTitle("Excluir")
+                .setMessage("Tem certeza que deseja excluir?")
+                .setPositiveButton("Sim", (dialogInterface, i) -> remoteDataSource.deleteCategory(category, new RemoteDeleteCallback()))
+                .setNegativeButton("Não", null)
+                .show();
     }
 
     private class RemoteCategoriesCallback implements Presenter<List<Category>> {

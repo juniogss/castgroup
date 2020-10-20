@@ -19,7 +19,7 @@ import retrofit2.http.Path;
 
 public interface LocalAPI {
 
-    String BASE_URL = "http://192.168.1.184:3333/";
+    String BASE_URL = "http://localhost:3333/";
 
     @Headers("Content-Type: application/json")
     @POST("category")

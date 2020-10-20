@@ -1,5 +1,9 @@
 package br.com.junio.castgroup.main.presenter.list;
 
+import android.content.Context;
+
+import androidx.appcompat.app.AlertDialog;
+
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
@@ -81,7 +85,12 @@ public class ListPresenter implements Presenter<List<Course>>, CourseListener, F
 
     @Override
     public void onDeleteClick(Course course) {
-        remoteDataSource.deleteCourse(course, new RemoteDeleteCallback());
+        new AlertDialog.Builder((Context) view)
+                .setTitle("Excluir")
+                .setMessage("Tem certeza que deseja excluir?")
+                .setPositiveButton("Sim", (dialogInterface, i) -> remoteDataSource.deleteCourse(course, new RemoteDeleteCallback()))
+                .setNegativeButton("Não", null)
+                .show();
     }
 
     @Override

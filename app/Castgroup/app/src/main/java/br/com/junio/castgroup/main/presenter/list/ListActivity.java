@@ -37,7 +37,7 @@ import br.com.junio.castgroup.main.datasource.ListLocalDataSource;
 import br.com.junio.castgroup.main.datasource.ListRemoteDataSource;
 import br.com.junio.castgroup.main.presenter.ListView;
 import br.com.junio.castgroup.main.presenter.categories.CategoriesFragment;
-import br.com.junio.castgroup.main.presenter.category.CategoriesPresenter;
+import br.com.junio.castgroup.main.presenter.categories.CategoriesPresenter;
 import br.com.junio.castgroup.main.presenter.category.CategoryFragment;
 import br.com.junio.castgroup.main.presenter.category.CategoryPresenter;
 import br.com.junio.castgroup.main.presenter.course.CourseFragment;
@@ -87,7 +87,7 @@ public class ListActivity extends AbstractActivity implements ListView {
         ListDataSource.Remote remoteDataSource = new ListRemoteDataSource();
         presenter = new ListPresenter(localDataSource, remoteDataSource);
         categoryPresenter = new CategoryPresenter(localDataSource, remoteDataSource);
-        categoriesPresenter = new CategoriesPresenter(localDataSource, remoteDataSource);
+        categoriesPresenter = new CategoriesPresenter(remoteDataSource);
         coursePresenter = new CoursePresenter(localDataSource, remoteDataSource);
         presenter.setView(this);
     }
