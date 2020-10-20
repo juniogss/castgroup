@@ -17,6 +17,13 @@ Também possui a opção filtrar, onde é possível buscar cursos pela descriç�
 - Stetho para ponte de depuração
 
 ## Uso
+
+- instalar o nodejs (https://nodejs.org/en/)
+- instalar o mongoDB (https://www.mongodb.com/)
+- acessar a pasta backend e executar o comando npm install no terminal
+- renomear o arquivo .env.example para .env e colocar os dados de conexão ao banco de dados do mongoDB
+- executar o comando npm start no terminal
+
 Substituir o 'localhost' pelo IP local da máquina, no arquivo /common/datasource/remote/LocalAPI 
 
 ```java
